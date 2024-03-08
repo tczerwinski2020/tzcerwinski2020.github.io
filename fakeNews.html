@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Airline Management System -- Taylor Czerwinski</title>
+
+	</head>
+	<body>
+		<img src='images/business.jpeg' alt='A picture of Taylor Czerwinski' width=250 height= 250
+		title = "Taylor Czerwinski" />
+		<img src='images/marquette.png' alt='Marquette University Logo' width=250 height= 205/>
+		<img src='images/hphs.jpeg' alt='Highland Park Highschool Logo' width=250 height= 245/>
+		<h1>Taylor Czerwinski</h1>
+		<a href = "index.html"><h4>Back</h4></a>
+
+		<h3><b>Fake News Detector</b></h3>
+		<p><b>Abstract</b>
+			<br>
+
+			We were given a classification problem to determine whether an article was fake news or real news. To solve this, we built three fake news detection models in Python, each based on different data analysis methods:
+			<br>TF-IDF and Passive Aggressive Classifier
+			<br>TF-IDF and Logistical Regression
+			<br>CountVectorizer and Multinomial Naive Bayes Classifier
+
+
+			<br>Each of these models has two components, a feature constructor and a classifier. Feature constructors take articles and process it into data that is easier to interpret and classifiers take that data and predict something from it. 
+
+			<br>
+			<br><b>Background</b>
+			<br>
+			With the rise of online journalism through alternative media outlets and social media, the issue of fake news has become significantly more prevalent in mainstream discourse. The best way to combat the consumption of fake news is to verify sources manual using basic source checking techniques like the ones seen below.
+
+			<br>
+			That being said, the volume of news media being spread on the internet each day is simply too high to manually account for every article, tweet, and blog post, necessitating an autonomous solution to the problem. Machine learning has been the backbone to a variety of algorithmic approaches to detecting and classifying fake news. These ML implementations involve training a model on a large number of articles, which then constructs an algorithm to predict the validity of future articles passed through the model. These models usually involve two key components,  feature construction and classification. Feature Construction is the concept of taking the set of raw inputs (in this case, articles, tweets, etc) and reducing them to some set of “features” that can then be easily interpreted by a classifier. It is then the job of the classifier to use the prior data its been fed, to make a prediction about how that piece of data should be grouped (in our case, whether it is fake or real news). 
+
+<br><br>
+<b>Methods</b><br>
+Through our three fake news detectors, we used a multitude of machine learning and natural language processing tools. These include TF-IDF, Passive Aggressive Classifier, logistic regression modeling, count vectorizer, and the Multinomial Naive Bayes (MNB) algorithm. 
+
+<br><b>
+Cleaning the Data</b>
+<br>
+To clean the data, we used a combination of techniques. First, we removed extra white spaces on the column names. Next, we converted numerical data into categorical data (REAL/FAKE). Third, we replaced nulls with the empty string. Lastly, we removed links from the data and everything that isn’t a character or punctuation. We then removed stop words and put all string data to lowercase. 
+<br>
+
+<b>TF-IDF</b><br>
+Term Frequency-Inverse Document Frequency (TF-IDF) is a feature construction method (or feature vectorizer to be more precise). It seeks to determine the relevance of terms to an article by measuring their frequency in relation to the size of the article. TF-IDF is often used in information retrieval and machine learning.
+<br>
+<b>
+Count Vectorizer</b><br>
+The Count Vectorizer is a feature vectorizer similar to the TF-IDF. Rather than trying to calculate the relevance of terms, it simply stores the number of times each term appears in the text within a sparse matrix. 
+
+<br>
+<b>Passive Aggressive Classifier</b><br>
+Sklearn’s Passive Aggressive Classifier is an algorithm often used in large-scale machine learning. It classifies something as passive if the model fits, and aggressive if the model needs to be changed. 
+
+<br>
+<b>Logistical Regression</b><br>
+Logistical Regression is in a popular data analysis tool used to find the relationship between two factors in data. In our case, we would be looking at the relationship between the term relevance values found by our TF-IDF and the validity of the news article. 
+
+<br><b>Multinomial Naive Bayes</b><br>
+Multinomial Naive Bayes is an algorithm used for text classification. Used in Natural Language Processing (NLP) problems, it is particularly useful for problems that involve text counts. 
+<br>
+<br>
+<b>Results</b><br>
+Our TF-IDF and PAC program was found to be 97% accurate. In the test data, 2611 fake articles were found and 2589 real ones. Otherwise, 50.21% of the articles in the test data were fake according to this model (49.79% were identified as real articles). The TF-IDF and LR algorithm was found to be 94.88% accurate, finding 2609 fake articles and 2591 real articles in the test data. This program identified 50.17% as fake articles and 49.83% as real articles. Lastly, our Count Vectorizer and Multinomial NB program was found to be 91.32% accurate, with 2963 fake articles identified and 2237 real ones. This program found 56.98% of the test data to be fake articles and 43.02% 
+
+<br>
+
+
+</p>
+		<a href="https://github.com/tczerwinski2020/fakeNews"><h4>GitHub</h4></a>
+		<img src = 'images/realorfakeresults.png' alt = 'Real or Fake Results for 3 Fake News Detectors on Test Data' width = 450 height = 200/>
+		<img src = 'images/accuracyresults.png' alt = 'Accuracy Results for 3 Fake News Detectors' width = 500 height = 200/>
+		<img src = 'images/tfidfpac.png' alt = "Bar Graph of Results from TFIDF and PAC program on testing data" width = 800 height = 400/>
+		<img src = 'images/tfidflogreg.png' alt = "Bar Graph of Results from TFIDF and LOG REG program on testing data" width = 800 height = 400/>
+		<img src = 'images/countmultinb.png' alt = "Bar Graph of Results from Count Vectorizer and Multinomial NB program on testing data" width = 800 height = 400/>
+
+	</body>
+</html>
