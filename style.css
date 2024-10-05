@@ -1,0 +1,151 @@
+
+h1{
+	text-shadow: 5px 5px 5px pink, 10px 10px 5px lightblue;
+
+}
+
+body{
+	text-align: center;
+	background-image: url(images/leaves2.gif);
+	background-color: rgba(255, 255, 255, .2);
+	background-blend-mode: overlay;
+
+}
+
+
+a:link{
+	color: hsl(221,100%, 74%);
+}
+a:hover{
+	color: hsl(221, 100%, 84%);
+	font-size: 1.1em;
+}
+a:active{
+	color:hsl(240,100%,58%);
+	font-size:1.1em;
+}
+a:visited{
+	color:hsl(0, 50%, 50%);
+}
+
+div{
+	padding: 10px;
+	border-radius: 15px;
+	width: 410px;
+	margin: auto;
+	margin-bottom: 15px;
+
+	img{
+		display: inline ;
+	}
+	margin-left: 400px;
+}
+@keyframes grow {
+	50%{transform: scale(1.25,1.25)}
+}
+
+.red {
+	border: solid tomato;
+	animation-name:grow;
+	animation-duration:1s;
+}
+.red audio {
+	animation-name:slideLeft;
+	animation-duration:2s;
+}
+
+.orange p {
+	display:none;
+}
+
+.orange {
+	border: solid orange;
+	animation-name:grow;
+	animation-duration:1s;
+}
+.orange:hover p{
+	display: block;
+}
+.orange img {
+	animation-name:slideRight;
+	animation-duration:2s;
+}
+
+
+.yellow p {
+	display:none;
+	padding: 5px;
+}
+.yellow {
+	border: solid yellow;
+	display: center;
+	padding: 10px;
+	animation-name:grow;
+	animation-duration:1s;
+
+}
+.yellow img{
+	animation-name:slideLeft;
+	animation-duration:2s;
+}
+
+.yellow:hover p {
+	display:block;
+}
+
+.green {
+	border:solid lightgreen;
+	animation-name:grow;
+	animation-duration:1s;
+}
+.green p {
+	animation-name:slideRight;
+	animation-duration: 2s;
+
+}
+@keyframes slideRight{
+	from{transform: translateX(-1000px)}
+}
+
+.blue {
+	border: solid lightblue;
+	padding: 0px;
+	margin: 0 px;
+	animation-name:grow;
+	animation-duration:1s;
+
+}
+.blue img{
+	transform: rotateZ(-25deg);
+	scale: .4;
+	margin: 0 px;
+	padding: 0px;
+	animation-name:slideLeft;
+	animation-duration:2s;
+}
+@keyframes slideLeft {
+	from{transform: translateX(1000px)}
+}
+.blue p {
+	display: none;
+}
+.blue:hover p {
+	display: block;
+}
+
+.purple {
+	border:solid rgb(175, 0, 128);
+	animation-name: grow;
+	animation-duration: 1s;
+}
+.purple p {
+	animation-name:slideRight;
+	animation-duration: 2s;
+}
+@keyframes rotate {
+	from{transform: rotateZ(360deg)}
+}
+.purple img {
+	animation-name:rotate;
+	animation-duration: 2s;
+}
