@@ -4,38 +4,142 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Taylor Czerwinski</title>
+		<link rel = "stylesheet" href = "index_style.css">
+
 
 	</head>
 	<body>
 		<header>
-			<img src='images/business.jpeg' alt='A picture of Taylor Czerwinski' width=250 height= 250
+			<img id = "busi" src='images/business.jpeg' alt='A picture of Taylor Czerwinski' width=250 height= 250
 			title = "Taylor Czerwinski" />
-			<img src='images/marquette.png' alt='Marquette University Logo' width=250 height= 205 title ="Marquette University"/>
-			<img src='images/hphs.jpeg' alt='Highland Park Highschool Logo' width=250 height= 245 title = "Highland Park Highschool"/>
+			
 			<link rel = "icon" type = 'image/png' href = 'favicon.png'>
 			<h1>Taylor Czerwinski</h1>
+			<nav class = "navbar">
+				<ul>
+					<li><a class = "nav-link" href = "home.html">Home</a></li>
+					<li><a class = "nav-link" href = "#senior">Senior Project</a></li>
+					<li><a class = "nav-link" href= "#education">Education</a></li>
+					<li><a class = "nav-link" href= "#work">Work Experience</a></li>
+					<li>
+						<a href = "#">My Projects </a>
+						<ul class = "dropdown">
+							<li><a href = "fakeNews.html">Fake News Detector</a></li>
+							<li><a href = "spaceJam.html">Space Jam Video Game</a></li>
+							<li><a href = "SAMS.html">Student Account Management System</a></li>
+
+							<li><a href = "AMS.html">Airline Management System</a></li>
+							<li><a href = "zillowEstimates.html">Zillow Estimates</a></li>
+							<li><a href = "massShooting.html">Mass Shooting Data Analysis</a></li>
+
+						</ul>
+					</li>
+					<li><a class = "nav-link" href= "websiteFun.html">About Me</a></li>
+					<li><a class = "nav-link" href= "#footer">Contact Me</a></li>
+
+				</ul>
 			<hr>
 		</header>
-		
-		<h2>About Me</h2>
-		<h4>I am a senior at Marquette University in Milwaukee, WI studying Computer Science and Mathematics.</h4>
-		<h4>I am currently taking Principles of Design, Ethical Hacking, Linear Algebra, and Intro to Data Science.</h4>
-		<h4>I have experience coding in SQL, Python, C++, Java, HTML, CSS, JavaScript, Fortran, Haskell.</h4>
-		<h4>I will be graduating in May of 2025.</h4>
-		<h4>I am currently an intern on the Information Security team at Children's Hospital of Wisconsin.</h4>
-		<br>
-
-		<h2>Projects</h2>
-		<a href="fakeNews.html"><h3><b>Fake News Detector</b></h3></a>
-		<a href= "spaceJam.html"><h3><b>Space Jam Video Game</b></h3></a>
-		<a href="SAMS.html"><h3><b>Student Account Management System</b></h3></a>
-		<a href="AMS.html"><h3><b>Airline Management System</b></h3></a>
-		<a href ="zillowEstimates.html"><h3><b>Zillow Estimates</b></h3></a>
-		<a href ="massShootings.html"><h3><b>Mass Shooting Data Analysis</b></h3></a>
-		<a href = "websiteFun.html"><h3><b>Website Fun</b></h3></a>
-		
-		<footer>
+			<h4>I am a senior at Marquette University studying computer science and mathematics. I will be graduating in May 2025 and am on the look out for a full time position. I am currently an intern on the Information Security team at Children's Hospital of Wisconsin. My senior project is an inventory management system for the Milwaukee Brewers.</h4>
 			<hr>
+			<div class = "senior" id = "senior">
+				<h2>Senior Project</h2>
+				<img id = "brewers" src = "images/brewers.png" alt = "Brewers Logo" width = 100 title = "Brewers">
+				<p>I am currently taking the class Senior Projects. My senior project is an inventory management system for the Milwaukee Brewers. This will be an iOS application for an iPad including a barcode scanner. Users will be able to check in/out devices, search for devices, and view recent activity. This will be written in Swift, SQL, and Python.</p>
+				<br>
+				<br>
+				<br>
+			</div>
+			<hr>
+			<div claas= 'education' id = "education">
+
+				<h2>Education</h2>
+				<img id = "mu" src='images/marquette.png' alt='Marquette University Logo' width=50 title ="Marquette University"/>
+				<h4>Marquette University -- Milwaukee, WI</h4>
+				<p>Bachelor's of Science in Computer Science</p>
+				<p>Minor in Mathematics</p>
+				<p>Expected Graduation: May 2025</p>
+				<img id = "hp" src='images/hphs.jpeg' alt='Highland Park High School Logo' width=50 title ="HPHS"/>
+				<h4>Highland Park High School -- Highland Park, IL</h4>
+				<br>
+				<p></p>
+				<p></p>
+			</div>	
+			<hr>
+			<div class = "work" id = "work">
+				<h2>Work Experience</h2>
+				<div class = "chw">
+					<img id = 'chw' src = 'images/chw.png' alt= "Children's Hospital of Wisconsin Logo" width = 50 title = "Childrens Wisconsin">
+					<h4>Children's Hospital of Wisconsin -- Milwaukee, WI</h4>
+					<p>Intern, Enterprise Information Security Team</p>
+					<p>September 2024 - Present</p>
+					<ul>
+						<li>Act as primary point of contact for initial ticket triage</li>
+						<li>Supports password resets and user provisioning</li>
+						<li>Gain exposure to Active Directory, PowerShell, Sentinel One</li>
+						<li>Uphold a high level of confidentiality</li>
+					</ul>
+				</div>
+				<br>
+				<div class = "rec">
+					<img id = "rec" src = "images/rec.png" alt = "Marquette Recreational Sports Logo" width = 50 title = "Rec Sports">
+					<h4>RecPlex -- Milwaukee, WI</h4>
+					<p>Service Staff</p>
+					<p>May 2024 - September 2024</p>
+					<ul>
+
+						<li> Ensured safe usage of workout equipment</li>
+						<li>Managed patrons check-ins</li>
+						<li>Sold memberships and various retail items</li>
+					</ul>
+				</div>
+
+				<br>
+				<div class= "jj">
+					<img id = "jj" src = "images/jj.png" alt = "Jimmy John's Logo" width = 50 title = "Jimmy Johns">
+					<h4>Jimmy John's -- Highland Park, IL</h4>
+					<p>Delivery Driver & In Shop</p>
+					<p>June 2023 - October 2023</p>
+					<ul>
+						<li>Took orders, operated the cash register, answered phones</li>
+						<li>Prepared sandwiches and safely delivered food to Glencoe, Highland Park, and Northbrook</li>
+					</ul>
+
+				</div>
+
+				<br>
+				<div class = "trust">
+					<img id = "trust" src = "images/trustmark.jpg" alt="Trustmark Logo" width = 50 title = "Trustmark">
+					<br>
+					<h4>Trustmark Insurance Benefits -- Lake Forest, IL</h4>
+					<p>Intern, Database Administrator Team</p>
+					<p>May 2022 - August 2022</p>
+					<ul>
+						<li>Tuned queries within stored procedures and triggers for speed and efficiency</li>
+						<li>Completed a server purge project</li>
+						<li>Assessed, modified, and removed indexes for servers based on Brent Ozar Blitz Indexing</li>
+						<li>Created documentation for team on Quest’s Foglight</li>
+					</ul> 
+				</div>
+
+				<br>
+				<div class = "clemente">
+					<img id = "clemente" src = 'images/clemente.png' alt = "Clemente Center" width = 50 title = "CLemente Center">
+					<h4>Clemente Center -- Melbourne, FL</h4>
+					<p>Facility Attendant</p>
+					<p>October 2021 - October 2022</p>
+					<ul>
+						<li>Managed front desk—including patron check-ins and retail sails</li>
+						<li>Ensured safe usage of workout equipment</li>
+					</ul>
+				</div>
+
+
+			</div>
+<hr>
+
+		<footer id = "footer">
+			
 			<h2>Find Me Online!</h2>
 			<a href='Resume2024.pdf' download><img src ="images/resume-7.png" alt = "Resume icon" width ="50"  title = "Resume"></a>
 			<a href="www.linkedin.com/in/taylor-czerwinski-bb0048156" target = "_blank"> <img src="images/LinkedIn_Logo.png" alt = "LinkedIn Logo" width = 150 height = 50 title = "LinkedIn"></a>
