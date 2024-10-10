@@ -1,0 +1,99 @@
+body {
+	padding: 0px;
+	margin: 0 px;
+	color: aliceblue;
+	background-color:#072F5F;
+
+}
+
+#busi {
+	margin: 10px;
+	float: right;
+	border-radius: 20px;
+	box-shadow: 0 0 100px lightblue;
+}
+
+.navbar ul {
+	list-style-type: none;
+	background-color: #1261A0;
+	padding: 0px;
+	margin: 0 px;
+	overflow: hidden;
+}
+ul li ul.dropdown li {
+	display: block;
+}
+ul li ul.dropdown {
+	
+	position: absolute;
+	
+	display: none;
+}
+
+ul li:hover ul.dropdown {
+	display: block;
+}
+
+.navbar a {
+	color: aliceblue;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+.navbar a:hover {
+	background-color: #072F5F;
+
+}
+.navbar li {
+	float: left;
+}
+
+h1{
+	text-shadow: 5px 5px 5px lightblue;
+}
+
+h4 {
+	margin: 0px;
+}
+#mu {
+	float: left;
+	margin-bottom: 75px;
+}
+
+#hp {
+	float: left;
+}
+#chw {
+	float:left;
+	margin-bottom: 125px;
+}
+#rec {
+	float: left;
+	margin-bottom: 125px;
+}
+#jj {
+	float: left;
+	margin-bottom : 75px
+}
+#trust {
+	float: left;
+
+	margin-bottom : 125px;
+}
+#clemente {
+	float: left;
+	margin-bottom: 125px ;
+}
+#brewers {
+	float: left;
+}
+
+
+.chw {
+	margin-left: 0px;
+}
+.rec {
+	margin-left: 0px;
+}
+
