@@ -4,12 +4,65 @@ h1{
 
 }
 
+.navbar ul{
+	list-style-type : none;
+
+	background-color: pink;
+	padding: 0px;
+	margin: 0 px;
+	overflow: hidden;
+}
+.navbar a {
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align:center;
+
+}
+
+.dropdown:hover .content{
+	display: block;
+}
+.dropdown a {
+	display: flex;
+	background-color: pink;
+	text-decoration: none;
+
+}
+.dropdown li {
+	color: FireBrick;
+	padding-top: 14px;
+	margin: 0px;
+}
+.dropdown .content {
+	position: left;
+	display: none;
+}
+
+.dropdown li:hover {
+	background-color: aliceblue;
+	color: black;
+	padding: 10px;
+}
+
+.navbar a:hover {
+	background-color: aliceblue;
+	color: black;
+}
+.navbar li {
+	float: left;
+	
+}
+
+
 body{
 	text-align: center;
-	background-image: url(images/leaves2.gif);
+	background: radial-gradient(white, lightblue), url(images/websiteFun/leaves2.gif);
+	
+
 	background-color: rgba(255, 255, 255, .2);
 	background-blend-mode: overlay;
-
+	margin: 0px;
 }
 
 
