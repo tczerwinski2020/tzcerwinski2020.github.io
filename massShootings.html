@@ -3,58 +3,83 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Taylor Czerwinski</title>
-		<style>
-			table, th, td {
-			  border: 1px solid black;
-			  border-collapse: collapse;
-			}
-		</style>
+		<title>Zillow Estimates -- Taylor Czerwinski</title>
+		<link rel = "stylesheet" href = "index_style.css">
+
+
 	</head>
 	<body>
-		<img src='images/business.jpeg' alt='A picture of Taylor Czerwinski' width=250 height= 250
-		title = "Taylor Czerwinski" />
-		<img src='images/marquette.png' alt='Marquette University Logo' width=250 height= 205 title ="Marquette University"/>
-		<img src='images/hphs.jpeg' alt='Highland Park Highschool Logo' width=250 height= 245 title = "Highland Park Highschool"/>
-		<h1>Taylor Czerwinski</h1>
-		<hr>
-		<a href = "index.html"><h4>Back</h4></a>
+		<header>
+			<img id = "busi" src='images/business.jpeg' alt='A picture of Taylor Czerwinski' width=250 height= 250
+			title = "Taylor Czerwinski" />
+			
+			<link rel = "icon" type = 'image/png' href = 'favicon.png'>
+			<h1>Taylor Czerwinski</h1>
+			<nav class = "navbar">
+				<ul>
+					<li><a class = "nav-link" href = "index.html">Home</a></li>
+					<li><a class = "nav-link" href = "index.html#senior">Senior Project</a></li>
+					<li><a class = "nav-link" href= "index.html#education">Education</a></li>
+					<li><a class = "nav-link" href= "index.html#work">Work Experience</a></li>
+					<li>
+						<a href = "#">My Projects </a>
+						<ul class = "dropdown">
+							<li><a href = "fakeNews.html">Fake News Detector</a></li>
+							<li><a href = "spaceJam.html">Space Jam Video Game</a></li>
+							<li><a href = "SAMS.html">Student Account Management System</a></li>
 
+							<li><a href = "AMS.html">Airline Management System</a></li>
+							<li><a href = "zillowEstimates.html">Zillow Estimates</a></li>
+							<li><a href = "massShooting.html">Mass Shooting Data Analysis</a></li>
+
+						</ul>
+					</li>
+					<li><a class = "nav-link" href= "websiteFun.html">About Me</a></li>
+					<li><a class = "nav-link" href= "#footer">Contact Me</a></li>
+
+				</ul>
+			</nav>
+			<hr>
+		</header>
+
+	
+
+	
 		<h3>Mass Shooting Data Analysis in the United States, 2018-2022</h3>
 		<p>Downloading the dataset from Kaggle (https://www.kaggle.com/datasets/hemil26/mass-shootings-in-united-states-20182022?resource=download), I received data on mass shootings in the United States from 2018 to 2022. I analyzed the data using pandas and python.</p>
 
 		<table bgcolor="black" width = "400">
-			<tr bgcolor="grey">
+			<tr bgcolor="darkgrey">
 				<th width = "100">Year</th>
 				<th width = "100">Number of Mass Shootings</th>
 				<th width = "100">Total Deaths</th>
 				<th width = "100">Injured</th>
 			</tr>
-			<tr bgcolor="lightgrey">
+			<tr bgcolor="grey">
 				<td>2018</td>
 				<td>322</td>
 				<td>383</td>
 				<td>1291</td>
 			</tr>
-			<tr bgcolor="lightgrey">
+			<tr bgcolor="grey">
 				<td>2019</td>
 				<td>441</td>
 				<td>524</td>
 				<td>1754</td>
 			</tr>
-			<tr bgcolor="lightgrey">
+			<tr bgcolor="grey">
 				<td>2020</td>
 				<td>615</td>
 				<td>520</td>
 				<td>2545</td>
 			</tr>
-			<tr bgcolor="lightgrey">
+			<tr bgcolor="grey">
 				<td>2021</td>
 				<td>694</td>
 				<td>701</td>
 				<td>2836</td>
 			</tr>
-			<tr bgcolor="lightgrey">
+			<tr bgcolor="grey">
 				<td>2022</td>
 				<td>284</td>
 				<td>329</td>
@@ -101,6 +126,8 @@
 			</tr>
 		</table>
 
+
+
 		<p>Below are pie graphs of mass shootings by state by year.</p>
 		<br>
 		<img src = 'images/massShootingImages/2018images/bystategraph2018.png' alt = "A pie graph of state's mass shootings in 2018" width = 500 height = 460>
@@ -123,11 +150,13 @@
 		<img src="images/massShootingImages/2021images/bymonth2021.png" alt = "A pie graph of mass shootings by month in 2021" width =550 height = 550>
 		<img src="images/massShootingImages/2022images/bymonth2022.png" alt = "A pie graph of mass shootings by month in 2022" width =550 height = 550>
 
-		<hr>
-		<h2>Find Me Online!</h2>
-		<a href='Resume2024.pdf' download><h3>Resume</h3></a>
-		<a href="www.linkedin.com/in/taylor-czerwinski-bb0048156"> <img src="images/LinkedIn_Logo.png" alt = "LinkedIn Logo" width = 150 height = 50 title = "LinkedIn"></a>
-		<a href="https://github.com/tczerwinski2020"> <img src="images/GitHub-logo.png" alt="GitHub Logo" width = 100 height = 50 title="GitHub"></a>
-
+	<hr>
+		<footer id = "footer">
+			
+			<h2>Find Me Online!</h2>
+			<a href='Resume2024.pdf' download><img src ="images/resume-7.png" alt = "Resume icon" width ="50"  title = "Resume"></a>
+			<a href="www.linkedin.com/in/taylor-czerwinski-bb0048156" target = "_blank"> <img src="images/LinkedIn_Logo.png" alt = "LinkedIn Logo" width = 150 height = 50 title = "LinkedIn"></a>
+			<a href="https://github.com/tczerwinski2020" target = "_blank"> <img src="images/GitHub-logo.png" alt="GitHub Logo" width = 100 height = 50 title="GitHub"></a>
+		</footer>
 	</body>
 </html>
