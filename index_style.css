@@ -87,13 +87,16 @@ h4 {
 }
 #brewers {
 	float: left;
+	margin-right: 10px;
 }
 
-
+#github {
+	color: white;
+	text-decoration: none;
+}
 .chw {
 	margin-left: 0px;
 }
 .rec {
 	margin-left: 0px;
 }
-
